@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+ }
+
+
+body{
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c), url(img/logo.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2dd3, #b21f1fd0, #1a2a6cd3), url(img/logo.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+
+}
+ 
+
+
+
+
+ body .contenedor-products{
+     
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fbec, #4e54c8d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fbe5, #4e54c8e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+
+   
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#titulo-prod{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #d3cce3;
+    padding: 10px;
+    box-shadow: 0  0 20px  rgb(0, 0, 0, .5);
+    position: relative;
+}
+.contenedor a img{
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+    
+   
+}
+
+.contenedor-products{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.imagen-products{
+    width: 35%;
+    position: relative;
+    box-shadow: 0  0 20px  rgb(0, 0, 0, .5);
+   
+}
+
+
+.contenedor-products .imagen-products{
+    transition: all 300ms;
+    cursor: pointer;
+} 
+
+.contenedor-products .imagen-products:hover{
+    box-shadow: 5px 5px 0px 0px #2772beb0, 10px 10px #83c0fdc9, 15px 15px 7px #acd5fd;
+    transform: translate(-5px, -5px);
+}
+
+
+
+.elaboracion .contenido-texto-products{
+    width: 48%;
+}
+
+.contenido-texto-products span{
+    background-color: #642a73;
+     border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 15x;
+}
+
+.contenido-texto-products p{
+    padding-bottom: 2px;
+    margin-left: auto;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+   
+   
+}
+
+.contenido-texto-products a img{
+    width: 60px;
+    height: 50px;
+    border-radius: 90%;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+
+.volver-efecto{
+    display: table-cell;
+    border-radius: 20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    height: 20px;
+    width: 20px;
+   box-shadow: 0  0 20px  rgb(0, 0, 0, .5);
+   
+}
+
+
+@-webkit-keyframes rotar{
+
+    0%{-webkit-transform: scale(1) rotate(0deg);}
+    50%{-webkit-transform: scale(1.5) rotate(180deg);}
+    100%{-webkit-transform: scale(1) rotate(360deg);}
+}
+
+@-moz-keyframes rotar{
+    0%{-moz-transform: scale(1) rotate(0deg);}
+    50%{-moz-transform: scale(1.5) rotate(180deg);}
+    100%{-moz-transform: scale(1) rotate(360deg);}
+}
+
+.volver-efecto{
+    -webkit-animation: rotar 3s linear infinite;
+    -moz-animation: roter 3s linear infinite;
+}
+
+
+@media screen and (max-width:900px){
+    
+    .contenedor-products{
+        width: 90%;
+}
+
+    
+
+}
