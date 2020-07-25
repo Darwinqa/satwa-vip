@@ -161,12 +161,34 @@ body{
 }
 
 
+
+
 @media screen and (max-width:900px){
-    
     .contenedor-products{
-        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+.contenedor .contenido-texto-products{
+    width: 90%;
+}
+.imagen-products{
+    width: 90%;
 }
 
-    
 
+}
+
+@media screen and (max-width:500px){
+    .imagen-products{
+       
+        width: 90%;
+    }
+
+    .contenedor .contenido-texto-products{
+        width: 95%;
+        text-align: center;
+        align-items: center
+    }
 }
