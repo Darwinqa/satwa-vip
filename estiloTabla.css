@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+body{
+    background-image: url(imgs/fondoPeli.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+
+    src: url(https://fonts.google.com/);
+}
+
+table{
+    width: 100%;
+    border-spacing: 5px;
+    font-weight: bold;
+    font-family: "trebuchet MS", verdana, "sans-serif";
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: red;
+    font-size: 36px;
+    
+}
+table, th, td{
+    border: 1.5px solid #fff;
+    border-radius: 6px;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+
+}
+.table1 thead th{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.table1 tbody th{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.table1 tfoot td{
+    color: green;
+    text-align: center;
+    font-size: 36px;
+}
+.table1 tfoot th{
+    color: blue;
+    font-size: 26px;
+    text-align: center;
+
+}
+.table1 tbody tr{
+    background-color: #ffdeb2;
+}
